@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "../schema/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+	<class name="entity.Account" table="ACCOUNT">
+		<meta attribute="class-description">
+			This class contains the user account detail
+		</meta>
+		<id name="accountID" type="int" column="ACCOUNT_ID">
+			<generator class="native" />
+		</id>
+		<property name="accountName" type="string" column="ACCOUNT_NAME" />
+		<property name="password" type="string" column="PASSWORD" />
+	</class>
+</hibernate-mapping>
